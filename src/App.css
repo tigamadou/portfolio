@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+*{
+  font-family: 'Comic Neue', cursive;
+
+}
+.full-name{
+  text-transform: uppercase;
+  font-size: calc(16px + 5vmin);
+  
+}
+.has-text-uppercase{
+  text-transform: uppercase;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-hero .container{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+
+}
+.navbar-middle{
+  display: flex;
+  margin: 0px auto 0px auto;
+}
+.project{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.project.is-dark .hero-body{
+  background:linear-gradient(to bottom, rgba(0,0,0,0.9),rgba(0,0,0,1));
+}
+.project.is-light .hero-body{
+  background:linear-gradient(to bottom, RGB(245, 245, 245,.9),RGB(245, 245, 245));
 }
 
-.App-link {
-  color: #61dafb;
+.project .image{
+  box-shadow: 0px 20px 15px -10px rgba(0,0,0,0.2);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.project .column{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.project .title{
+  font-size: calc(16px + 4vmin);
+  text-transform: uppercase;
+}
+.project .technologies{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-start;
+}
+.project .technologies li{
+  padding: 3px 5px;
+  
+  margin: 0px 5px;
+  border-radius: 8px;
+  background: #f1f1f1;
+  color: #333;
+  font-size: 13px;
+}
+.project .technologies li:first-child{
+  margin-left: 0px;
+}
+
+.project .links{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-start;
+
+}
+.project .links .is-link{
+  padding: 10px 15px;
+  box-shadow: 0px 8px 10px -10px rgba(0,0,0,0.2);
+  margin: 0px 10px;
+  transition: all 0.5 ease-in-out;
+  font-weight: 600;
+  
+}
+.project .links .is-link:hover{
+  box-shadow: 0px 8px 10px -0px rgba(0,0,0,0.2);
+}
+.project.is-light .links .is-link{
+  color: #333;
+
+}
+.project.is-danger .links .is-link{
+  color: #fff;
+  
+  background: #333;
+}
+.project.is-danger .links .is-link:hover{
+  color: #f14668;
+  background: #fff;
+}
+
+@media only screen and (max-width: 900px)
+{
+  .project.is-variant .columns  {
+    display: flex;
+    flex-direction: column-reverse;
   }
-  to {
-    transform: rotate(360deg);
-  }
+
 }

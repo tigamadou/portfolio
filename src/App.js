@@ -1,24 +1,36 @@
 import React from 'react';
-import logo from './logo.svg';
+import 'bulma/css/bulma.css'
 import './App.css';
+import Navbar from './components/NavBar'
 
+import Projects from './views/Projects';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+
+      <Navbar />
+      <div className="hero is-dark is-large  main-hero">
+        <div className="hero-body">
+          <div className="container">
+            <h1 className="title is-spaced full-name">Amadou IBRAHIM</h1>
+            <div className="subtitle">
+              <p>
+                I'm a Full-Stack Developper based in Benin Republic and thisis my PortFolio
+              </p>       
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="hero">
+        <div className="hero-body">
+          <h2 className="title has-text-centered has-text-uppercase">Projects</h2>
+        </div>
+
+      </div>
+      <Projects/>
+      
+   
     </div>
   );
 }
