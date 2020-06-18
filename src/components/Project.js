@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bulma/css/bulma.css'
-import Projects from '../views/Projects';
-
+import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
 const images = require.context('./../images', true);
 let Project = (props) => {
     let class_names = 'project hero is-fullheight '
@@ -31,22 +31,25 @@ let defaultTemplate = (props) => {
                 <div className="container">
                     <div className="columns">
                         <div className="column is-7">
-                            <figure className="image ">
-                                <img src={images('./' + props.item.images[0])} alt={props.item.name} />
-                            </figure>
+                            <Zoom>
+                                <figure className="image ">
+                                    <img src={images('./' + props.item.images[0])} alt={props.item.name} />
+                                </figure>
+                            </Zoom>
                         </div>
                         <div className="column">
-                            <h3 className="title">{props.item.name} </h3>
-                            <p>
-                                {props.item.description}
-                            </p>
-                            <ul className="technologies">
-                                {props.item.technologies.map((e, i) => (
-                                    <li key={i}>{e}</li>
-                                ))}
-                            </ul>
-                            {renderLinks(props.item)}
-
+                            <Fade bottom cascade>
+                                <h3 className="title">{props.item.name} </h3>
+                                <p  className="description">
+                                    {props.item.description}
+                                </p>
+                                <ul className="technologies">
+                                    {props.item.technologies.map((e, i) => (
+                                        <li key={i}>{e}</li>
+                                    ))}
+                                </ul>
+                                {renderLinks(props.item)}
+                            </Fade>
                         </div>
                     </div>
                 </div>
@@ -63,21 +66,25 @@ let variantTemplate = (props) => {
                 <div className="container">
                     <div className="columns project">
                         <div className="column">
-                            <h3 className="title">{props.item.name} </h3>
-                            <p>
-                                {props.item.description}
-                            </p>
-                            <ul className="technologies">
-                                {props.item.technologies.map((e, i) => (
-                                    <li key={i}>{e}</li>
-                                ))}
-                            </ul>
-                            {renderLinks(props.item)}
+                            <Fade bottom cascade>
+                                <h3 className="title">{props.item.name} </h3>
+                                <p className="description">
+                                    {props.item.description}
+                                </p>
+                                <ul className="technologies">
+                                    {props.item.technologies.map((e, i) => (
+                                        <li key={i}>{e}</li>
+                                    ))}
+                                </ul>
+                                {renderLinks(props.item)}
+                            </Fade>
                         </div>
                         <div className="column is-7">
-                            <figure className="image ">
-                                <img src={images('./' + props.item.images[0])} alt={props.item.name} />
-                            </figure>
+                            <Zoom>
+                                <figure className="image ">
+                                    <img src={images('./' + props.item.images[0])} alt={props.item.name} />
+                                </figure>
+                            </Zoom>
                         </div>
 
                     </div>
@@ -119,7 +126,7 @@ let renderLinks = (item) => {
             )
         }
     }
-    
+
     return (
         <div className="links">
             {demo(item)}

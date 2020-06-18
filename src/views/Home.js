@@ -1,7 +1,12 @@
 import React from 'react';
 import 'bulma/css/bulma.css'
 import Web from './../images/web.svg'
-
+import {
+    
+    Link
+  } from "react-router-dom";
+import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
 let Home = () => {
     return (
 
@@ -12,17 +17,36 @@ let Home = () => {
                 <div className="container">
                     <div className="columns">
                         <div className="column is-5">
-                            <h1 className="title is-spaced full-name">Amadou IBRAHIM</h1>
-                            <div className="subtitle">
-                                <p>
-                                    I'm a Full-Stack Developper based in Benin Republic and thisis my PortFolio
-                            </p>
-                            </div>
+                            <Fade bottom cascade>
+
+                                <h1 className="title is-spaced full-name"><span>Amadou</span> <span className="has-text-danger">IBRAHIM</span></h1>
+                                <div className="subtitle">
+                                    <p>
+                                        I'm a Full-Stack Developper based in Benin Republic and thisis my PortFolio
+                                    </p>
+                                    <br/><br/>
+                                    <div className="buttons">
+
+                                        <Link className="button  " to="/projects">
+                                            Projects
+                                        </Link>
+                                        <Link className="button  is-outlined " to="/contact">
+                                            About
+                                        </Link>
+                                        <Link className="button   " to="/contact">
+                                            Contacts
+                                        </Link>
+                                    </div>
+                                </div>
+                            </Fade>
                         </div>
                         <div className="column">
-                            <div className="image">
-                                <img src={Web} />
-                            </div>
+                            <Zoom>
+
+                                <div className="image">
+                                    <img src={Web} />
+                                </div>
+                            </Zoom>
                         </div>
                     </div>
 

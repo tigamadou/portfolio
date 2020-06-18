@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState,useEffect  } from 'react';
 import 'bulma/css/bulma.css'
 import './App.css';
 import Navbar from './components/NavBar'
@@ -10,33 +10,50 @@ import {
   Route,
   Link
 } from "react-router-dom";
+
+
 function App() {
+  const [menuState,setMenuState] = useState("")
+  
+  let menuClicked= (menu)=>{
+    console.log(menu)
+    if(menu=="open"){
+      setMenuState("")
+    }else{
+      setMenuState("open")
+    }
+    console.log(menu)
+  }
+  
   return (
     <Router>
-      <nav className="navbar  is-fixed-top is-transparent" role="navigation" aria-label="main navigation">
-                <div className="container">
+      <nav className={"menu "+ menuState } role="navigation" aria-label="main navigation">
+        <div className="burger-container">
+
+          <div  className={"burger " + menuState} onClick={()=>menuClicked(menuState)}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
 
 
 
-                    <div id="navbarBasicExample" className="navbar-menu">
-                        <div className="navbar-middle">
-                            <Link to="/" className="navbar-item">Home</Link>
-                            <Link to="/projects" className="navbar-item">PROJECTS</Link>
-                           
-                           
-                            <a className="navbar-item">
-                                ABOUT
-                </a>
-                            <a className="navbar-item">
-                                CONTACT
-                </a>
-                        </div>
-                    </div>
 
-                </div>
-            </nav>
+        <div className="menu-container">
+          <Link to="/" className="menu-item" onClick={()=>setMenuState('')}>Home</Link>
+          <Link to="/projects" className="menu-item" onClick={()=>setMenuState('')}>PROJECTS</Link>
+          <Link to="/about"  className="menu-item" onClick={()=>setMenuState('')}>ABOUT</Link>
+          <Link to="/about"  className="menu-item" onClick={()=>setMenuState('')}>CONTACT</Link>
+
+
+        </div>
+
+
+
+      </nav>
       <Switch>
-        
+
         <Route path="/projects">
           <Projects />
         </Route>
@@ -44,10 +61,10 @@ function App() {
           <Home />
         </Route>
       </Switch>
-      
- 
-      
-   
+
+
+
+
     </Router>
   );
 }
