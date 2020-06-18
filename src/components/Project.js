@@ -39,7 +39,7 @@ let defaultTemplate = (props) => {
                         </div>
                         <div className="column">
                             <Fade bottom cascade>
-                                <h3 className="title">{props.item.name} </h3>
+                                <h3 className="title">{props.item.name}</h3>
                                 <p  className="description">
                                     {props.item.description}
                                 </p>

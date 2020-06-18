@@ -5,11 +5,19 @@ body{
   overflow: hidden;
   padding-top:2rem;
 }
+.main-hero{
+  background: linear-gradient(to bottom, #fff 70%, whitesmoke 100%, #ccc);
+  background-attachment: fixed;
+}
 .full-name{
   text-transform: uppercase;
-  font-size: calc(16px + 8vmin);
+  font-size: 8vmin;
   font-weight: 900;
   
+}
+.last-name{
+  display: block;
+  font-size: 10vmin;
 }
 .has-text-uppercase{
   text-transform: uppercase;
@@ -61,11 +69,12 @@ body{
   margin-top: 2rem;
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
 }
 .project .technologies li{
   padding: 3px 5px;
   
-  margin: 0px 5px;
+  margin: 5px 5px;
   border-radius: 8px;
   background: #f1f1f1;
   color: #333;
@@ -109,10 +118,14 @@ body{
 
 @media only screen and (max-width: 900px)
 {
-  .project.is-variant .columns  {
+  .project.is-variant .columns,.main-hero .columns  {
     display: flex;
     flex-direction: column-reverse;
   }
+  .main-hero .columns {
+    text-align: center;
+  }
+
 
 }
 .menu {
@@ -142,14 +155,15 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 12vmin;
+  font-size: 10vmin;
   
 }
 .menu .menu-container .menu-item{
-  color: #f14668;
+  color: #fff;
   transform: translateX(-50%);
   opacity: 0.1;
   transition: all 0.8s ease-in-out;
+  position: relative;
   
 }
 .menu.open .menu-container{
@@ -158,6 +172,23 @@ body{
 .menu.open .menu-container .menu-item{
   transform: translateX(0%);
   opacity: 1;
+}
+.menu.open .menu-container .menu-item::after{
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  height: 8px;
+  right: 0px; 
+  border-radius: 20px 20px 0px 0px;
+  margin: 0px 50% 0px 50%;
+  transition: all 0.5s ease-in-out;
+  
+}
+.menu.open .menu-container .menu-item:hover::after{
+  background-color: #f14668;
+  margin: 0px;
+  
 }
 .burger-container{
   background: #fff;
@@ -219,4 +250,34 @@ body{
   transform: rotate(-45deg);
   top: 1.6rem;
   left: 0.4rem;
+}
+
+.contacts{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
+  padding: 1rem;
+}
+.contacts .contact{
+  width: 80px;
+  height: 80px;
+  font-size: 5vmin;
+  transition: all 0.25s ease-in-out;
+  text-align: center;
+  border-radius: 50%;
+  color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+.contacts .contact object{
+  width: 100%;
+}
+.contacts .contact:hover{
+  transform: scale(1.1);
+  color: #000;
+ 
 }

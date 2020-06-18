@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Project from './../components/Project'
 import 'bulma/css/bulma.css'
+import Fade from 'react-reveal/Fade';
 const projectList = [
     {
         name: 'Shop Template',
@@ -45,7 +46,9 @@ let Projects = () => {
     return (
         <div className="hero">
                 <div className="hero-body">
-                    <h2 className="title has-text-centered has-text-uppercase">Projects</h2>
+                    <Fade bottom>
+                    <h2 className="title has-text-centered has-text-uppercase is-size-1">Projects</h2>
+                    </Fade>
                 </div>
 
                     {renderProjects()}

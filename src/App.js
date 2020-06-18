@@ -1,9 +1,10 @@
 import React, { useState,useEffect  } from 'react';
 import 'bulma/css/bulma.css'
 import './App.css';
-import Navbar from './components/NavBar'
 import Home from './views/Home';
 import Projects from './views/Projects';
+import About from './views/About';
+import Contact from './views/Contact';
 import {
   BrowserRouter as Router,
   Switch,
@@ -43,8 +44,7 @@ function App() {
         <div className="menu-container">
           <Link to="/" className="menu-item" onClick={()=>setMenuState('')}>Home</Link>
           <Link to="/projects" className="menu-item" onClick={()=>setMenuState('')}>PROJECTS</Link>
-          <Link to="/about"  className="menu-item" onClick={()=>setMenuState('')}>ABOUT</Link>
-          <Link to="/about"  className="menu-item" onClick={()=>setMenuState('')}>CONTACT</Link>
+          <Link to="/contact"  className="menu-item" onClick={()=>setMenuState('')}>CONTACT</Link>
 
 
         </div>
@@ -53,7 +53,12 @@ function App() {
 
       </nav>
       <Switch>
-
+      <Route path="/contact">
+          <Contact />
+        </Route>
+        <Route path="/about">
+          <About />
+        </Route>
         <Route path="/projects">
           <Projects />
         </Route>

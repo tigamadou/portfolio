@@ -19,10 +19,10 @@ let Home = () => {
                         <div className="column is-5">
                             <Fade bottom cascade>
 
-                                <h1 className="title is-spaced full-name"><span>Amadou</span> <span className="has-text-danger">IBRAHIM</span></h1>
+                                <h1 className="title is-spaced full-name"><span>Amadou</span> <span className="last-name has-text-danger">IBRAHIM</span></h1>
                                 <div className="subtitle">
                                     <p>
-                                        I'm a Full-Stack Developper based in Benin Republic and thisis my PortFolio
+                                        I'm a Full-Stack Developer based in Benin Republic and thisis my PortFolio
                                     </p>
                                     <br/><br/>
                                     <div className="buttons">
@@ -30,9 +30,7 @@ let Home = () => {
                                         <Link className="button  " to="/projects">
                                             Projects
                                         </Link>
-                                        <Link className="button  is-outlined " to="/contact">
-                                            About
-                                        </Link>
+                                       
                                         <Link className="button   " to="/contact">
                                             Contacts
                                         </Link>
