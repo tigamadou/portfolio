@@ -45,7 +45,7 @@ let defaultTemplate = (props) => {
                                     <li key={i}>{e}</li>
                                 ))}
                             </ul>
-                            {renderLinks(props)}
+                            {renderLinks(props.item)}
 
                         </div>
                     </div>

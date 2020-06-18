@@ -5,7 +5,8 @@
 }
 .full-name{
   text-transform: uppercase;
-  font-size: calc(16px + 5vmin);
+  font-size: calc(16px + 8vmin);
+  font-weight: 900;
   
 }
 .has-text-uppercase{
@@ -13,10 +14,7 @@
 }
 
 .main-hero .container{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
 
 }
 .navbar-middle{
@@ -37,6 +35,15 @@
 
 .project .image{
   box-shadow: 0px 20px 15px -10px rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+.project .image img{
+  transition: all 5s ease-in-out;
+  
+}
+.project:hover  .image img{
+  transform:  scale(1.1);
+  
 }
 
 .project .column{
@@ -76,15 +83,16 @@
   padding: 10px 15px;
   box-shadow: 0px 8px 10px -10px rgba(0,0,0,0.2);
   margin: 0px 10px;
-  transition: all 0.5 ease-in-out;
+  transition: all 0.5s ease-in-out;
   font-weight: 600;
   
 }
 .project .links .is-link:hover{
   box-shadow: 0px 8px 10px -0px rgba(0,0,0,0.2);
 }
-.project.is-light .links .is-link{
-  color: #333;
+.project.is-light .links .is-link,.project.is-white .links .is-link{
+  color: #fff;
+  background: #f14668;
 
 }
 .project.is-danger .links .is-link{
