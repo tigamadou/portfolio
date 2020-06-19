@@ -29,7 +29,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://github.com/tigamadou/portfolio">
     <img src="public/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -147,7 +147,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 - Github: [@genzaraki](https://github.com/genzaraki)
 - Twitter: [@tigamadou](https://twitter.com/tigamadou)
-- Linkedin: [Amadou IBRAHIM](https://www.linkedin.com/in/amadou-ibrahim-75769167/)
+- Linkedin: [Amadou IBRAHIM](https://www.linkedin.com/in/amadou-ibrahim/)
 
 Project Link: [https://github.com/tigamadou/portfolio](https://github.com/tigamadou/portfolio)
 
@@ -173,16 +173,16 @@ Project Link: [https://github.com/tigamadou/portfolio](https://github.com/tigama
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=flat-square
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=flat-square
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=flat-square
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=flat-square
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=flat-square
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/tigamadou/portfolio.svg?style=flat-square
+[contributors-url]: https://github.com/tigamadou/portfolio/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/tigamadou/portfolio.svg?style=flat-square
+[forks-url]: https://github.com/tigamadou/portfolio/network/members
+[stars-shield]: https://img.shields.io/github/stars/tigamadou/portfolio.svg?style=flat-square
+[stars-url]: https://github.com/tigamadou/portfolio/stargazers
+[issues-shield]: https://img.shields.io/github/issues/tigamadou/portfolio.svg?style=flat-square
+[issues-url]: https://github.com/tigamadou/portfolio/issues
+[license-shield]: https://img.shields.io/github/license/tigamadou/portfolio.svg?style=flat-square
+[license-url]: https://github.com/tigamadou/portfolio/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
+[linkedin-url]: https://linkedin.com/in/amadou-ibrahim
 [product-screenshot]: images/screenshot.png
