@@ -93,7 +93,7 @@ const Project = (props) => {
 
 let renderLinks = (item) => {
   const demo = (item) => {
-    console.log(item);
+    
     if (item.demo_link) {
       return (
         <a className="is-link" href={item.demo_link} target="_blank">
