@@ -1,17 +1,18 @@
 import React, { useState } from 'react';
+import ReactGA from 'react-ga';
+
 import 'bulma/css/bulma.css';
 import './App.scss';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-} from 'react-router-dom';
+import {  BrowserRouter as Router,  Switch,  Route,  Link} from 'react-router-dom';
 import Home from './views/Home';
 import Projects from './views/Projects';
 import About from './views/About';
 import Contact from './views/Contact';
+import {   FaFacebook, FaTwitter, FaLinkedin, FaGithub, FaEnvelope, FaSkype, FaDiscord, } from 'react-icons/fa';
+import profilePicture from './images/photo.jpg'
 
+ReactGA.initialize('G-48M1H1KS7S');
+ReactGA.pageview(window.location.pathname + window.location.search);
 function App() {
   const [menuState, setMenuState] = useState('');
 
@@ -26,6 +27,32 @@ function App() {
   return (
     <Router>
       <nav className={`menu ${menuState}`} role="navigation" aria-label="main navigation">
+      <div className="topNav container">
+            <Link to="/"  onClick={() => setMenuState('')}>
+        <span className="profile">
+            <span className="photo">
+
+              <img src={profilePicture} />
+            </span>
+            <span className="info">
+              <span className="name">
+                Amadou IBRAHIM
+              </span>
+              <span className="role">
+                Full-Stack Developer
+              </span>
+            </span>
+        </span>
+            </Link>
+        <div className="links">
+          <a className="is-link" href="https://www.linkedin.com/in/amadou-ibrahim/" target="_blank">
+            <FaLinkedin/>
+          </a>
+          <a href="https://www.linkedin.com/in/amadou-ibrahim/" target="_blank">
+            <FaGithub/>
+          </a>
+        </div>
+      </div>
         <div className="burger-container">
 
           <div className={`burger ${menuState}`} onClick={() => menuClicked(menuState)}>

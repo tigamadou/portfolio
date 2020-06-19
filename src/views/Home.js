@@ -7,34 +7,42 @@ import Web from '../images/web.svg';
 import Page from './../components/Page'
 const Home = () => (
 
-  <div className="hero  is-fullheight  main-hero">
+  <div className="hero  is-medium  main-hero">
     <Page pageTitle="Full-Stack Developer"/>
     <div className="hero-body">
       <div className="container">
         <div className="columns">
-          <div className="column is-5">
-            <Fade bottom cascade>
-
+          <div className="column is-6">
+            <Fade bottom>
+              <p className="subtitle">Hey, I'm a</p>
               <h1 className="title is-spaced full-name">
-                <span>Amadou</span>
+                <span>Full-Stack </span>
                 {' '}
-                <span className="last-name has-text-danger">IBRAHIM</span>
+                <span className="last-name has-text-danger">Developer</span>
               </h1>
               <div className="subtitle">
                 <p>
-                  I'm a Full-Stack Developer based in Benin Republic and this is my PortFolio
+                  I'm a passionate self-taught developer with an operational problem-solving approach. 
+                 
                 </p>
+                <p>
+                I design, build, test, deploy awesome apps for great user experience, and this, efficiently.
+                </p>
+                <p>
+                  Have a project, an Idea, an opportunity, or just want to say hi? 
+                </p>
+                <Link className=" has-text-danger is-link " to="/contact">
+                    Contact me now
+                  </Link>
                 <br />
                 <br />
                 <div className="buttons">
 
-                  <Link className="button  " to="/projects">
-                    Projects
+                  <Link className="has-text-dark  is-small" to="/projects">
+                    Here are my recent Projects
                   </Link>
 
-                  <Link className="button   " to="/contact">
-                    Contacts
-                  </Link>
+                  
                 </div>
               </div>
             </Fade>

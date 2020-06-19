@@ -11,7 +11,7 @@ const Contact = () => {
     {
       name: 'Gmail',
       image: 'FaEnvelope',
-      link: 'mailto:amadou140589@gmail',
+      link: 'mailto:ibrahimtigamadou@gmail.com',
     },
     {
       name: 'Linkedin',
@@ -101,8 +101,13 @@ const Contact = () => {
 
                 
                 <h2 className="title is-size-1 has-text-danger">Get in touch</h2>
+                <br/>
                 <p className="subtitle">
-                  If you want to know more about me or my work, feel free to contact me now.
+                  Did I sound like a great fit for an opportunity? Thus, don"t hesitate to get in contact now: 
+                </p>
+                <p className="contactMail">
+                  ibrahimtigamadou@gmail.com
+
                 </p>
                 <br />
                 <br />
