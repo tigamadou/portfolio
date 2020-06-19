@@ -22,7 +22,7 @@ const projectList = [
       '2.png', 'shop-2.png',
     ],
     technologies: ['Ruby', 'Ruby on Rails', 'Html/Erb', 'Css', 'Javascript'],
-    class: 'is-danger',
+    class: 'is-danger is-variant',
     demo_link: 'https://blooming-escarpment-87825.herokuapp.com/users/sign_in',
     github_link: 'https://github.com/tigamadou/ashu-social-network',
 
