@@ -87,7 +87,7 @@ const Contact = () => {
       <div className="hero">
         <div className="hero-body">
           <Fade bottom>
-            <h2 className="title has-text-centered has-text-uppercase is-size-1">Contact</h2>
+            <h1 className="title has-text-centered has-text-uppercase is-size-1">Contact</h1>
           </Fade>
         </div>
 
@@ -100,7 +100,7 @@ const Contact = () => {
                 <Fade bottom >
 
                 
-                <h1 className="title is-size-1 has-text-danger">Get in touch</h1>
+                <h2 className="title is-size-1 has-text-danger">Get in touch</h2>
                 <p className="subtitle">
                   If you want to know more about me or my work, feel free to contact me now.
                 </p>

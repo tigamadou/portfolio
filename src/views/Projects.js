@@ -45,7 +45,7 @@ const Projects = () => (
   <div className="hero">
     <div className="hero-body">
       <Fade bottom>
-        <h2 className="title has-text-centered has-text-uppercase is-size-1">Projects</h2>
+        <h1 className="title has-text-centered has-text-uppercase is-size-1">Projects</h1>
       </Fade>
     </div>
 
