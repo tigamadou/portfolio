@@ -22,7 +22,7 @@ const projectList = [
       'shop-1.png', 'shop-2.png',
     ],
     technologies: ['HTML', 'CSS', 'JAVASCRIPT'],
-    class: 'is-light',
+    class: 'is-white',
     demo_link: 'https://rawcdn.githack.com/genzaraki/shoptemplate/c3a12d5c081d2b240f7ff6834a62bf97efebc885/index.html',
     github_link: 'https://github.com/tigamadou/shoptemplate',
   },
@@ -33,7 +33,7 @@ const projectList = [
       '2.png', 'shop-2.png',
     ],
     technologies: ['Ruby', 'Ruby on Rails', 'Html/Erb', 'Css', 'Javascript','Bulma'],
-    class: 'is-danger is-variant',
+    class: 'is-danger ',
     demo_link: 'https://blooming-escarpment-87825.herokuapp.com/users/sign_in',
     github_link: 'https://github.com/tigamadou/ashu-social-network',
 
@@ -45,7 +45,7 @@ const projectList = [
       'hrt.png', 'shop-2.png',
     ],
     technologies: ['Ruby', 'Ruby on Rails', 'Html/Erb', 'Css', 'Javascript'],
-    class: 'is-white',
+    class: 'is-light',
     demo_link: 'https://thawing-wave-61294.herokuapp.com/',
     github_link: 'https://github.com/tigamadou/hrt',
 

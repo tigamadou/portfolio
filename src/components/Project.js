@@ -85,10 +85,12 @@ const Project = (props) => {
     return (
       defaultTemplate(props)
     );
+  }else{
+    props.item.class+=" is-variant"
+    return (
+      variantTemplate(props)
+    );
   }
-  return (
-    variantTemplate(props)
-  );
 };
 
 let renderLinks = (item) => {
