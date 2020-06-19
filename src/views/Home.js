@@ -4,10 +4,11 @@ import { Link } from 'react-router-dom';
 import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
 import Web from '../images/web.svg';
-
+import Page from './../components/Page'
 const Home = () => (
 
   <div className="hero  is-fullheight  main-hero">
+    <Page pageTitle="Full-Stack Developer"/>
     <div className="hero-body">
       <div className="container">
         <div className="columns">
@@ -21,7 +22,7 @@ const Home = () => (
               </h1>
               <div className="subtitle">
                 <p>
-                  I'm a Full-Stack Developer based in Benin Republic and thisis my PortFolio
+                  I'm a Full-Stack Developer based in Benin Republic and this is my PortFolio
                 </p>
                 <br />
                 <br />

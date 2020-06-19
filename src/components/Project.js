@@ -2,10 +2,11 @@ import React from 'react';
 import 'bulma/css/bulma.css';
 import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
-
+import Page from './../components/Page'
 const images = require.context('./../images', true);
 const defaultTemplate = (props) => (
     <div className={props.item.class} key={props.index}>
+      <Page pageTitle="Projects"/>
       <div className="hero-body">
         <div className="container">
           <div className="columns">
@@ -17,7 +18,7 @@ const defaultTemplate = (props) => (
               </Zoom>
             </div>
             <div className="column">
-              <Fade bottom cascade>
+              <Fade bottom >
                 <h3 className="title">{props.item.name}</h3>
                 <p className="description">
                   {props.item.description}
@@ -43,7 +44,7 @@ const variantTemplate = (props) => (
         <div className="container">
           <div className="columns project">
             <div className="column">
-              <Fade bottom cascade>
+              <Fade bottom >
                 <h3 className="title">
                   {props.item.name}
                   {' '}

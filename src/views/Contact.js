@@ -5,18 +5,13 @@ import {
   FaFacebook, FaTwitter, FaLinkedin, FaGithub, FaEnvelope, FaSkype, FaDiscord,
 } from 'react-icons/fa';
 import ContactImg from '../images/contact.svg';
-
+import Page from './../components/Page'
 const Contact = () => {
   const Contacts = [
     {
       name: 'Gmail',
       image: 'FaEnvelope',
       link: 'mailto:amadou140589@gmail',
-    },
-    {
-      name: 'Facebook',
-      image: 'FaFacebook',
-      link: 'https://facebook.com',
     },
     {
       name: 'Linkedin',
@@ -88,7 +83,7 @@ const Contact = () => {
   );
   return (
     <div>
-
+      <Page pageTitle="Contact"/>
       <div className="hero">
         <div className="hero-body">
           <Fade bottom>
@@ -97,14 +92,17 @@ const Contact = () => {
         </div>
 
       </div>
-      <div className="hero is-light is-medium">
+      <div className="hero is-light is-medium contactsection">
         <div className="hero-body">
           <div className="container">
             <div className="columns">
               <div className="column">
+                <Fade bottom >
+
+                
                 <h1 className="title is-size-1 has-text-danger">Get in touch</h1>
                 <p className="subtitle">
-                  If you want to know more about me or my work, feel free to contact me on
+                  If you want to know more about me or my work, feel free to contact me now.
                 </p>
                 <br />
                 <br />
@@ -112,12 +110,15 @@ const Contact = () => {
 
                   {renderContacts()}
                 </div>
+                </Fade>
               </div>
               <div className="column">
+                <Fade bottom>
                 <div className="image">
                   <img src={ContactImg} />
 
                 </div>
+                </Fade>
               </div>
 
             </div>

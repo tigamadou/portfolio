@@ -4,6 +4,10 @@ body{
   font-family: 'Suez One', serif;
   overflow: hidden;
   padding-top:2rem;
+  
+}
+*{
+  word-break: normal;
 }
 .main-hero{
   background: linear-gradient(to bottom, #fff 70%, whitesmoke 100%, #ccc);
@@ -14,6 +18,9 @@ body{
   font-size: 8vmin;
   font-weight: 900;
   
+}
+.subtitle{
+  font-family: Arial, Helvetica, sans-serif;
 }
 .last-name{
   display: block;
@@ -116,18 +123,7 @@ body{
   background: #fff;
 }
 
-@media only screen and (max-width: 900px)
-{
-  .project.is-variant .columns,.main-hero .columns  {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  .main-hero .columns {
-    text-align: center;
-  }
 
-
-}
 .menu {
   position: fixed;
   top: 0;
@@ -280,4 +276,19 @@ body{
   transform: scale(1.1);
   color: #000;
  
+}
+
+@media only screen and (max-width: 900px)
+{
+  .project.is-variant .columns,.main-hero .columns,.contactsection .columns  {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .main-hero .columns {
+    text-align: center;
+  }
+
+  .contacts .contact{
+    font-size: 10vmax;
+  }
 }
