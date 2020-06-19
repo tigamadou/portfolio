@@ -12,8 +12,8 @@ const projectList = [
     ],
     technologies: ['HTML', 'CSS', 'JAVASCRIPT','ReactJs','Bulma'],
     class: 'is-light',
-    demo_link: 'https://rawcdn.githack.com/genzaraki/shoptemplate/c3a12d5c081d2b240f7ff6834a62bf97efebc885/index.html',
-    github_link: 'https://github.com/tigamadou/shoptemplate',
+    demo_link: '/',
+    github_link: 'https://github.com/tigamadou/portfolio',
   },
   {
     name: 'Shop Template',
