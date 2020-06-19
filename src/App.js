@@ -8,7 +8,7 @@ import Home from './views/Home';
 import Projects from './views/Projects';
 import About from './views/About';
 import Contact from './views/Contact';
-import {   FaFacebook, FaTwitter, FaLinkedin, FaGithub, FaEnvelope, FaSkype, FaDiscord, } from 'react-icons/fa';
+import {    FaLinkedin, FaGithub } from 'react-icons/fa';
 import profilePicture from './images/photo.jpg'
 
 ReactGA.initialize('G-48M1H1KS7S');
@@ -32,7 +32,7 @@ function App() {
         <span className="profile">
             <span className="photo">
 
-              <img src={profilePicture} />
+              <img src={profilePicture} alt="Amadou IBRAHIM" />
             </span>
             <span className="info">
               <span className="name">
@@ -45,10 +45,10 @@ function App() {
         </span>
             </Link>
         <div className="links">
-          <a className="is-link" href="https://www.linkedin.com/in/amadou-ibrahim/" target="_blank">
+          <a className="is-link" href="https://www.linkedin.com/in/amadou-ibrahim/" target="_blank"  rel="noopener noreferrer">
             <FaLinkedin/>
           </a>
-          <a href="https://www.linkedin.com/in/amadou-ibrahim/" target="_blank">
+          <a href="https://github.com/tigamadou" target="_blank"  rel="noopener noreferrer">
             <FaGithub/>
           </a>
         </div>

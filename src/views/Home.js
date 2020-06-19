@@ -51,7 +51,7 @@ const Home = () => (
             <Zoom>
 
               <div className="image">
-                <img src={Web} />
+                <img src={Web} alt="Web developer svg"/>
               </div>
             </Zoom>
           </div>

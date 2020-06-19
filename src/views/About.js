@@ -1,9 +1,6 @@
 import React from 'react';
 import 'bulma/css/bulma.css';
-import {
 
-  Link,
-} from 'react-router-dom';
 import Fade from 'react-reveal/Fade';
 
 const About = () => (

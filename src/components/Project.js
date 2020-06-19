@@ -96,7 +96,7 @@ let renderLinks = (item) => {
     
     if (item.demo_link) {
       return (
-        <a className="is-link" href={item.demo_link} target="_blank">
+        <a className="is-link" href={item.demo_link} target="_blank"  rel="noopener noreferrer">
           Demo
         </a>
       );
@@ -106,7 +106,7 @@ let renderLinks = (item) => {
   const github = (item) => {
     if (item.github_link) {
       return (
-        <a className="is-link" href={item.github_link} target="_blank">
+        <a className="is-link" href={item.github_link} target="_blank"  rel="noopener noreferrer">
           GitHub
         </a>
       );
@@ -116,7 +116,7 @@ let renderLinks = (item) => {
   const site = (item) => {
     if (item.site_link) {
       return (
-        <a className="is-link">
+        <a className="is-link"  href={item.github_link} target="_blank"  rel="noopener noreferrer">
           Visit Site
         </a>
       );

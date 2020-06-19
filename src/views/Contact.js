@@ -44,30 +44,30 @@ const Contact = () => {
     <ContactElement key={index} index={index} item={element} />
   ));
   const Icon = (props) => {
-    if (props.item.image == 'FaFacebook') {
+    if (props.item.image === 'FaFacebook') {
       return (
         <FaFacebook />
       );
-    } if (props.item.image == 'FaTwitter') {
+    } if (props.item.image === 'FaTwitter') {
       return (
         <FaTwitter />
       );
-    } if (props.item.image == 'FaLinkedIn') {
+    } if (props.item.image === 'FaLinkedIn') {
       return (
         <FaLinkedin />
       );
     }
-    if (props.item.image == 'FaGithub') {
+    if (props.item.image === 'FaGithub') {
       return (
         <FaGithub />
       );
     }
-    if (props.item.image == 'FaSkype') {
+    if (props.item.image === 'FaSkype') {
       return (
         <FaSkype />
       );
     }
-    if (props.item.image == 'FaDiscord') {
+    if (props.item.image === 'FaDiscord') {
       return (
         <FaDiscord />
       );
@@ -77,7 +77,7 @@ const Contact = () => {
     );
   };
   const ContactElement = (props, index) => (
-    <a className="contact" href={props.item.link} target="_blank">
+    <a className="contact" href={props.item.link} target="_blank"  rel="noopener noreferrer">
       <Icon key={index} index={index} item={props.item} />
     </a>
   );
@@ -120,7 +120,7 @@ const Contact = () => {
               <div className="column">
                 <Fade bottom>
                 <div className="image">
-                  <img src={ContactImg} />
+                  <img src={ContactImg} alt="Contact"/>
 
                 </div>
                 </Fade>
