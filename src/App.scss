@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap');
+
+body{
+  font-family: 'Suez One', serif;
+  overflow: hidden;
+  // padding-top:3rem;
+  
+}
+*{
+  word-break: normal;
+}
+.main-hero{
+  background: linear-gradient(to bottom, #fff 70%, whitesmoke 100%, #ccc);
+  background-attachment: fixed;
+  .subtitle{
+    font-size: 1.5rem;
+    line-height: 150%;
+    p{
+      margin-bottom: 15px;
+    }
+  }
+}
+.full-name{
+  text-transform: uppercase;
+  font-size: 7vmin;
+  font-weight: 900;
+  
+}
+.subtitle{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.last-name{
+  display: block;
+  font-size: 8vmin;
+}
+.has-text-uppercase{
+  text-transform: uppercase;
+}
+
+.navbar-middle{
+  display: flex;
+  margin: 0px auto 0px auto;
+}
+.project{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.project.is-dark .hero-body{
+  background:linear-gradient(to bottom, rgba(0,0,0,0.9),rgba(0,0,0,1));
+}
+.project.is-light .hero-body{
+  background:linear-gradient(to bottom, RGB(245, 245, 245,.9),RGB(245, 245, 245));
+}
+
+.project .image{
+  box-shadow: 0px 20px 15px -10px rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+.project .image img{
+  transition: all 5s ease-in-out;
+  
+}
+.project:hover  .image img{
+  transform:  scale(1.1);
+  
+}
+
+.project .column{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.project .title{
+  font-size: calc(16px + 4vmin);
+  text-transform: uppercase;
+}
+.project .description{
+  font-weight: 200;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.project .technologies{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.project .technologies li{
+  padding: 3px 5px;
+  
+  margin: 5px 5px;
+  border-radius: 8px;
+  background: #f1f1f1;
+  color: #333;
+  font-size: 13px;
+}
+.project .technologies li:first-child{
+  margin-left: 0px;
+}
+
+.project .links{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-start;
+
+}
+.project .links .is-link{
+  padding: 10px 15px;
+  box-shadow: 0px 8px 10px -10px rgba(0,0,0,0.2);
+  margin: 0px 10px;
+  transition: all 0.5s ease-in-out;
+  font-weight: 400;
+  
+}
+.project .links .is-link:hover{
+  box-shadow: 0px 8px 10px -0px rgba(0,0,0,0.2);
+}
+.project.is-light .links .is-link,.project.is-white .links .is-link{
+  color: #fff;
+  background: #f14668;
+
+}
+.project.is-danger .links .is-link{
+  color: #fff;
+  
+  background: #333;
+}
+.project.is-danger .links .is-link:hover{
+  color: #f14668;
+  background: #fff;
+}
+
+
+.menu {
+ 
+  display: flex;
+  justify-content: flex-end;
+  z-index: 5;
+}
+.menu .menu-container{
+  
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top:0px;
+  bottom: 0px;
+  padding: 4rem 2rem;
+  background: #000;
+  transition: all 0.5s ease-in-out;
+  z-index: 1;
+  transform: translateX(-100%);
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 10vmin;
+  
+}
+.menu .menu-container .menu-item{
+  color: #fff;
+  transform: translateX(-50%);
+  opacity: 0.1;
+  transition: all 0.8s ease-in-out;
+  position: relative;
+  
+}
+.menu.open .menu-container{
+  transform: translateX(0%);
+}
+.menu.open .menu-container .menu-item{
+  transform: translateX(0%);
+  opacity: 1;
+}
+.menu.open .menu-container .menu-item::after{
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  height: 8px;
+  right: 0px; 
+  border-radius: 20px 20px 0px 0px;
+  margin: 0px 50% 0px 50%;
+  transition: all 0.5s ease-in-out;
+  
+}
+.menu.open .menu-container .menu-item:hover::after{
+  background-color: #f14668;
+  margin: 0px;
+  
+}
+.burger-container{
+  background: #fff;
+  padding: 1rem 1rem 1rem 2rem;
+  z-index: 999;
+  border-radius: 50px 0px 0px 50px;
+  position: fixed;
+  top: 0;
+  
+  right: 0;
+ 
+}
+.burger {
+  width: 2.5rem;
+  height: 2rem;
+  position: relative;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  
+ 
+
+}
+
+.burger span {
+  display: block;
+  position: absolute;
+  height: 0.4rem;
+  width: 100%;
+  background: #373A3C;
+  border-radius: 0;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.burger span:nth-child(1) {
+  top: 0rem;
+  transform-origin: left center;
+}
+
+.burger span:nth-child(2) {
+  top: 0.8rem;
+  transform-origin: left center;
+}
+
+.burger span:nth-child(3) {
+  top: 1.6rem;
+  transform-origin: left center;
+}
+
+.burger.open span:nth-child(1) {
+  transform: rotate(45deg);
+  top: -0.1rem;
+  left: 0.4rem;
+}
+
+.burger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.open span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 1.6rem;
+  left: 0.4rem;
+}
+
+.contacts{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
+  padding: 1rem;
+}
+.contacts .contact{
+  width: 80px;
+  height: 80px;
+  font-size: 5vmin;
+  transition: all 0.25s ease-in-out;
+  text-align: center;
+  border-radius: 50%;
+  color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+.contacts .contact object{
+  width: 100%;
+}
+.contacts .contact:hover{
+  transform: scale(1.1);
+  color: #000;
+ 
+}
+
+
+
+.topNav{
+  display: flex;
+  padding: 1rem;
+  a{
+    color: #000;
+  }
+  .profile{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    .photo{
+      display: block;
+      width: 50px;
+      height: 50px;
+      border-radius: 50px;
+      overflow: hidden;
+      margin-right: 1rem;
+    }
+    .info{
+      display: block;
+    }
+    .role{
+      display: block;
+      opacity: 0.6;
+    }
+  }
+  .links{
+    padding: 0px 15px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    width: 200px;
+    a{
+      display: inline-block;
+      color: #000;
+      
+  
+
+    }
+    
+  }
+  @media only screen and (max-width: 900px){
+    display: block;
+    .links{
+      font-size: 8vmin;
+      justify-content: center;
+      a{
+        margin: 5px;
+      }
+    }
+  }
+}
+.contactMail{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  opacity: 0.6;
+  color: #999;
+}
+
+@media only screen and (max-width: 900px)
+{
+  .project.is-variant .columns,.main-hero .columns,.contactsection .columns  {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .main-hero .columns {
+    text-align: center;
+  }
+
+  .contacts .contact{
+    font-size: 10vmax;
+  }
+  .contactMail{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    opacity: 0.6;
+  }
+  
+}
