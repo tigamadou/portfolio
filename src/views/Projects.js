@@ -6,18 +6,18 @@ import Fade from 'react-reveal/Fade';
 const projectList = [
   {
     name: 'PortFolio',
-    description: 'This is my PortFolio Web app Project. The Portfolio is built with ReactJs, and Bulma Css Framework.',
+    description: 'This is my Portfolio web app Project. The Portfolio is built with ReactJS, and Bulma CSS Framework.',
     images: [
       'react.png', 'shop-2.png',
     ],
-    technologies: ['HTML', 'CSS', 'JAVASCRIPT','ReactJs','Bulma'],
+    technologies: ['HTML', 'CSS', 'JAVASCRIPT','REACTJS','BULMA'],
     class: 'is-light',
     demo_link: '/',
     github_link: 'https://github.com/tigamadou/portfolio',
   },
   {
     name: 'Shop Template',
-    description: 'This Project is my Html/Css project for Capstone projects by Microverse. The pages were built for an online electronics shop where users will be able to browse products by category and access detailed product pages.',
+    description: 'This Project is my HTML/CSS project for Capstone projects by Microverse. The pages were built for an online electronics shop where users will be able to browse products by category and access detailed product pages.',
     images: [
       'shop-1.png', 'shop-2.png',
     ],
@@ -32,7 +32,7 @@ const projectList = [
     images: [
       '2.png', 'shop-2.png',
     ],
-    technologies: ['Ruby', 'Ruby on Rails', 'Html/Erb', 'Css', 'Javascript','Bulma'],
+    technologies: ['RUBY', 'RoR', 'HTML/ERB', 'CSS', 'JAVASCRIPT','BULMA'],
     class: 'is-danger ',
     demo_link: 'https://blooming-escarpment-87825.herokuapp.com/users/sign_in',
     github_link: 'https://github.com/tigamadou/ashu-social-network',
@@ -44,7 +44,7 @@ const projectList = [
     images: [
       'hrt.png', 'shop-2.png',
     ],
-    technologies: ['Ruby', 'Ruby on Rails', 'Html/Erb', 'Css', 'Javascript'],
+    technologies: ['RUBY', 'RoR', 'HTML/ERB', 'CSS', 'JAVASCRIPT'],
     class: 'is-light',
     demo_link: 'https://thawing-wave-61294.herokuapp.com/',
     github_link: 'https://github.com/tigamadou/hrt',

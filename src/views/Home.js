@@ -42,10 +42,11 @@ export default function Home (){
                 <br />
                 <br />
                 <div className="buttons">
-
-                  <Link className="has-text-dark  is-small" to="/projects">
-                    Here are my most recent Projects
-                  </Link>
+                  Click 
+                  <Link className="has-text-danger  is-small" to="/projects">
+                  here
+                  </Link> 
+                   to see my most recent Projects
 
                   
                 </div>
