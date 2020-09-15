@@ -26,20 +26,20 @@ const Home = () => (
                  
                 </p>
                 <p>
-                I design, build, test, deploy awesome apps for great user experience, and this, efficiently.
+                I design, build, test, deploy YOUR awesome apps with great user experience and efficiency  in mind.
                 </p>
                 <p>
-                  Have a project, an Idea, an opportunity, or just want to say hi? 
+                  Do you have a project, an idea, an opportunity, or just want to say hi? 
                 </p>
                 <Link className=" has-text-danger is-link " to="/contact">
-                    Contact me now
+                  Let's talk!
                   </Link>
                 <br />
                 <br />
                 <div className="buttons">
 
                   <Link className="has-text-dark  is-small" to="/projects">
-                    Here are my recent Projects
+                    Here are my most recent Projects
                   </Link>
 
                   

@@ -17,7 +17,7 @@ const projectList = [
   },
   {
     name: 'Shop Template',
-    description: 'This Project is my Html/Css project for Capstone projects by Microverse. The pages built are for an online electronics shop and the users will be able to browse the products by category and also see the product details page.',
+    description: 'This Project is my Html/Css project for Capstone projects by Microverse. The pages were built for an online electronics shop where users will be able to browse products by category and access detailed product pages.',
     images: [
       'shop-1.png', 'shop-2.png',
     ],
@@ -40,7 +40,7 @@ const projectList = [
   },
   {
     name: 'Human Right Talks',
-    description: 'Hrt is a Twitter-like social network. The user can create posts, comment, like, and follow other users.',
+    description: 'Hrt is a social network with Twitter-like functionnality. The user can create posts, comment, like, and follow other users. This app is built with Ruby On Rails.',
     images: [
       'hrt.png', 'shop-2.png',
     ],
