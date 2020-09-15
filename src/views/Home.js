@@ -5,7 +5,12 @@ import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
 import Web from '../images/web.svg';
 import Page from './../components/Page'
-const Home = () => (
+import Lottie from 'react-lottie';
+import developerLottie from './../lotties/developer.json';
+
+export default function Home (){
+
+  return(
 
   <div className="hero  is-medium  main-hero">
     <Page pageTitle="Full-Stack Developer"/>
@@ -51,7 +56,20 @@ const Home = () => (
             <Zoom>
 
               <div className="image">
-                <img src={Web} alt="Web developer svg"/>
+                {/* <img src={Web} alt="Web developer svg"/> */}
+                <Lottie 
+                  options={{
+                    loop: true,
+                    autoplay: true,
+                    animationData: developerLottie,
+                    rendererSettings: {
+                      preserveAspectRatio: "xMidYMid slice"
+                    }}
+                  }
+                    
+                    width="100%"
+                  />
+                
               </div>
             </Zoom>
           </div>
@@ -60,7 +78,8 @@ const Home = () => (
       </div>
     </div>
   </div>
+  )
 
-);
+}
 
-export default Home;
+
