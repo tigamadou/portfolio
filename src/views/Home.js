@@ -3,7 +3,7 @@ import 'bulma/css/bulma.css';
 import { Link } from 'react-router-dom';
 import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
-import Web from '../images/web.svg';
+// import Web from '../images/web.svg';
 import Page from './../components/Page'
 import Lottie from 'react-lottie';
 import developerLottie from './../lotties/developer.json';
