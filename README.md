@@ -186,3 +186,4 @@ Project Link: [https://github.com/tigamadou/portfolio](https://github.com/tigama
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/amadou-ibrahim
 [product-screenshot]: images/screenshot.png
+![](https://github.com/tigamadou/portfolio/workflows/CI/badge.svg)
