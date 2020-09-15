@@ -100,10 +100,10 @@ const Contact = () => {
                 <Fade bottom >
 
                 
-                <h2 className="title is-size-1 has-text-danger">Get in touch</h2>
+                <h2 className="title is-size-1 has-text-danger">Let's get in touch!</h2>
                 <br/>
                 <p className="subtitle">
-                  Did I sound like a great fit for an opportunity? Thus, don't hesitate to get in contact now: 
+                  Did I sound like a great fit for an opportunity? If so, don't hesitate to get in touch now:
                 </p>
                 <p className="contactMail">
                   ibrahimtigamadou@gmail.com
