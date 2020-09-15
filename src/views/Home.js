@@ -31,7 +31,7 @@ export default function Home (){
                  
                 </p>
                 <p>
-                I design, build, test, deploy YOUR awesome apps with great user experience and efficiency  in mind.
+                I design, build, test, deploy your awesome apps with great user experience and efficiency  in mind.
                 </p>
                 <p>
                   Do you have a project, an idea, an opportunity, or just want to say hi? 
