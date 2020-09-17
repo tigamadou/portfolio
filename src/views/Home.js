@@ -12,12 +12,12 @@ export default function Home (){
 
   return(
 
-  <div className="hero  is-medium  main-hero">
+  <div className="hero  is-fullheight  main-hero">
     <Page pageTitle="Full-Stack Developer"/>
     <div className="hero-body">
       <div className="container">
         <div className="columns">
-          <div className="column is-6">
+          <div className="column is-7">
             <Fade bottom>
               <p className="subtitle">Hey, I'm a</p>
               <h1 className="title is-spaced full-name">
