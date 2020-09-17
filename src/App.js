@@ -8,7 +8,7 @@ import Home from './views/Home';
 import Projects from './views/Projects';
 import About from './views/About';
 import Contact from './views/Contact';
-import {    FaLinkedin, FaGithub } from 'react-icons/fa';
+import {    FaLinkedin, FaGithub,FaTwitter,FaAngellist } from 'react-icons/fa';
 import profilePicture from './images/photo.jpg'
 
 ReactGA.initialize('G-48M1H1KS7S');
@@ -50,6 +50,12 @@ function App() {
           </a>
           <a href="https://github.com/tigamadou" target="_blank"  rel="noopener noreferrer">
             <FaGithub/>
+          </a>
+          <a href="https://twitter.com/tigamadou" target="_blank"  rel="noopener noreferrer">
+            <FaTwitter/>
+          </a>
+          <a href="https://angel.co/u/amadou-ibrahim" target="_blank"  rel="noopener noreferrer">
+            <FaAngellist/>
           </a>
         </div>
       </div>

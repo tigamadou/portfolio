@@ -40,7 +40,7 @@ const projectList = [
   },
   {
     name: 'Human Right Talks',
-    description: 'Hrt is a social network with Twitter-like functionnality. The user can create posts, comment, like, and follow other users. This app is built with Ruby On Rails.',
+    description: 'Hrt is a social network with Twitter-like functionality. The user can create posts, comment, like, and follow other users. This app is built with Ruby On Rails.',
     images: [
       'hrt.png', 'shop-2.png',
     ],
