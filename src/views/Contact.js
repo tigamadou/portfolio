@@ -2,7 +2,7 @@ import React from 'react';
 import 'bulma/css/bulma.css';
 import Fade from 'react-reveal/Fade';
 import {
-  FaFacebook, FaTwitter, FaLinkedin, FaGithub, FaEnvelope, FaSkype, FaDiscord,
+  FaFacebook, FaTwitter, FaLinkedin, FaGithub, FaEnvelope, FaSkype, FaDiscord, FaAngellist
 } from 'react-icons/fa';
 import ContactImg from '../images/contact.svg';
 import Page from './../components/Page'
@@ -17,6 +17,11 @@ const Contact = () => {
       name: 'Linkedin',
       image: 'FaLinkedIn',
       link: 'https://www.linkedin.com/in/amadou-ibrahim/',
+    },
+    {
+      name: 'Angellist',
+      image: 'FaAngellist',
+      link: 'https://angel.co/u/amadou-ibrahim',
     },
     {
       name: 'Twitter',
@@ -37,7 +42,7 @@ const Contact = () => {
       name: 'FaDiscord',
       image: 'FaDiscord',
       link: 'discord:tigamadou?chat',
-    },
+    }
   ];
 
   const renderContacts = () => Contacts.map((element, index) => (
@@ -55,6 +60,12 @@ const Contact = () => {
     } if (props.item.image === 'FaLinkedIn') {
       return (
         <FaLinkedin />
+      );
+      
+    }
+    if (props.item.image === 'FaAngellist') {
+      return (
+        <FaAngellist />
       );
     }
     if (props.item.image === 'FaGithub') {
